@@ -1,4 +1,4 @@
-const prisma = require("../../../config/prisma");
+const { prisma } = require("../../../config/prisma");
 const { verifyEmail, verifyCPF } = require("../../../utils/validation");
 const CustomError = require("../../../core/errors/CustomError");
 const bcrypt = require("bcrypt");

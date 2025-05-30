@@ -4,6 +4,8 @@ const verifyAdmin = require("../../../middlewares/admin");
 const updateUserController = require("../controllers/updateUser.controller");
 const getUserInfoController = require("../controllers/getUserInfo.controller");
 const getAllUsersController = require("../controllers/getAllUsers.controller");
+const deleteUserService = require("../services/deleteUser.service");
+const deleteUsersController = require("../controllers/deleteUsers.controller");
 
 const router = express.Router();
 
@@ -13,5 +15,6 @@ router.get("/info", verifyToken, verifyAdmin, (_, res) =>
 );
 router.get("/admin/all", verifyToken, verifyAdmin, getAllUsersController);
 router.patch("/update", verifyToken, updateUserController);
+router.delete("/delete/:id", verifyToken, deleteUsersController);
 
 module.exports = router;

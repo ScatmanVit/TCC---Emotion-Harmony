@@ -118,6 +118,12 @@ public class Meditation_Page7 extends AppCompatActivity {
                 public void onSuccess(String response) {
                     runOnUiThread(() -> {
                         toast.show("Meditação Finalizada", Toast.LENGTH_LONG, "#11273D", "success");
+                        questionsMeditation.setThinkToday("");
+                        questionsMeditation.setEmotion("");
+                        questionsMeditation.setCaracter("");
+                        questionsMeditation.setTypeSituation("");
+                        questionsMeditation.setFeltAfter("");
+                        questionsMeditation.setDescription("");
                         Intent intent = new Intent(Meditation_Page7.this, Page_Exercicies.class);
                         startActivity(intent);
                         overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
