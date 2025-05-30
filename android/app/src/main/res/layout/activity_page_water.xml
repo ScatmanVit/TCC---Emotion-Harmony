@@ -19,10 +19,107 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.5">
 
+        <!-- Campo Peso -->
+
+        <!-- Campo Horário Início -->
+
+        <!-- Campo Horário Fim -->
+
+        <!-- Placeholder CardView -->
+
+        <ImageView
+            android:id="@+id/btnBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="back"
+            app:srcCompat="@drawable/back"
+            tools:layout_editor_absoluteX="17dp"
+            tools:layout_editor_absoluteY="597dp" />
+
+        <EditText
+            android:id="@+id/txtPeso"
+            android:layout_width="360dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="200dp"
+            android:autofillHints=""
+            android:background="@drawable/rounded_edittext"
+            android:ems="10"
+            android:fontFamily="@font/montserrat_semibold"
+            android:hint="Peso"
+            android:inputType="text|textPassword"
+            android:textColor="#000000"
+            android:textColorHint="#000000"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/txtHoraInicio"
+            android:layout_width="170dp"
+            android:layout_height="58dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="300dp"
+            android:background="@drawable/rounded_edittext"
+            android:ems="10"
+            android:fontFamily="@font/montserrat_semibold"
+            android:hint="Inicio"
+            android:inputType="time"
+            android:textColor="#000000"
+            android:textColorHint="#000000"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/txtHoraFim"
+            android:layout_width="170dp"
+            android:layout_height="58dp"
+            android:layout_marginStart="212dp"
+            android:layout_marginTop="300dp"
+            android:background="@drawable/rounded_edittext"
+            android:ems="10"
+            android:fontFamily="@font/montserrat_semibold"
+            android:hint="Fim"
+            android:inputType="time"
+            android:textColor="#000000"
+            android:textColorHint="#000000"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
         <androidx.cardview.widget.CardView
             android:layout_width="409dp"
             android:layout_height="wrap_content"
             tools:layout_editor_absoluteX="1dp"
             tools:layout_editor_absoluteY="327dp" />
+
+        <TextView
+            android:id="@+id/textView19"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="116dp"
+            android:layout_marginTop="270dp"
+            android:text="Quando você está acordado"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btnInserir"
+            android:layout_width="252dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="76dp"
+            android:layout_marginTop="368dp"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="Pronto"
+            android:textAllCaps="true"
+            android:textSize="34sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView20"
+            android:layout_width="317dp"
+            android:layout_height="68dp"
+            android:text="Inserir informações necessárias para o registrador automático de ingestão de água"
+            tools:layout_editor_absoluteX="47dp"
+            tools:layout_editor_absoluteY="112dp" />
     </com.example.emotionharmony.components.BottomMenuView>
 </androidx.constraintlayout.widget.ConstraintLayout>
