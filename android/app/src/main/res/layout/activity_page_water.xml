@@ -31,7 +31,7 @@
             android:id="@+id/btnBack"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:contentDescription="back"
+            android:contentDescription="@string/back"
             app:srcCompat="@drawable/back"
             tools:layout_editor_absoluteX="17dp"
             tools:layout_editor_absoluteY="597dp" />
@@ -46,7 +46,7 @@
             android:background="@drawable/rounded_edittext"
             android:ems="10"
             android:fontFamily="@font/montserrat_semibold"
-            android:hint="Peso"
+            android:hint="@string/hint_peso"
             android:inputType="text|textPassword"
             android:textColor="#000000"
             android:textColorHint="#000000"
@@ -62,12 +62,13 @@
             android:background="@drawable/rounded_edittext"
             android:ems="10"
             android:fontFamily="@font/montserrat_semibold"
-            android:hint="Inicio"
+            android:hint="@string/inicio"
             android:inputType="time"
             android:textColor="#000000"
             android:textColorHint="#000000"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            android:autofillHints="" />
 
         <EditText
             android:id="@+id/txtHoraFim"
@@ -78,12 +79,13 @@
             android:background="@drawable/rounded_edittext"
             android:ems="10"
             android:fontFamily="@font/montserrat_semibold"
-            android:hint="Fim"
+            android:hint="@string/fim"
             android:inputType="time"
             android:textColor="#000000"
             android:textColorHint="#000000"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            android:autofillHints="" />
 
         <androidx.cardview.widget.CardView
             android:layout_width="409dp"
@@ -97,18 +99,18 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="116dp"
             android:layout_marginTop="270dp"
-            android:text="Quando você está acordado"
+            android:text="@string/texto_acordado"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <Button
             android:id="@+id/btnInserir"
-            android:layout_width="252dp"
-            android:layout_height="70dp"
-            android:layout_marginStart="76dp"
-            android:layout_marginTop="368dp"
+            android:layout_width="222dp"
+            android:layout_height="63dp"
+            android:layout_marginStart="92dp"
+            android:layout_marginTop="372dp"
             android:fontFamily="@font/montserrat_bold"
-            android:text="Pronto"
+            android:text="@string/botao_pronto"
             android:textAllCaps="true"
             android:textSize="34sp"
             app:layout_constraintStart_toStartOf="parent"
@@ -118,8 +120,19 @@
             android:id="@+id/textView20"
             android:layout_width="317dp"
             android:layout_height="68dp"
-            android:text="Inserir informações necessárias para o registrador automático de ingestão de água"
-            tools:layout_editor_absoluteX="47dp"
-            tools:layout_editor_absoluteY="112dp" />
+            android:layout_marginStart="44dp"
+            android:layout_marginTop="116dp"
+            android:text="@string/ingestao_titulo"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView28"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/icone_principal" />
     </com.example.emotionharmony.components.BottomMenuView>
 </androidx.constraintlayout.widget.ConstraintLayout>
