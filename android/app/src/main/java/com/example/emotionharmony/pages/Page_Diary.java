@@ -15,7 +15,6 @@ import android.content.Intent;
 
 import com.example.emotionharmony.R;
 import com.example.emotionharmony.components.BottomMenuView;
-import com.example.emotionharmony.databinding.ActivityPageExerciciesBinding;
 
 public class Page_Diary extends AppCompatActivity {
 
@@ -36,7 +35,7 @@ public class Page_Diary extends AppCompatActivity {
         BottomMenuView bottomMenu = findViewById(R.id.bottomMenu);
         bottomMenu.setActivityContext(this);
         Button btnSairDiary = findViewById(R.id.btnLogoutDiary);
-        Button btnStart = findViewById(R.id.btnStart);
+        Button btnStart = findViewById(R.id.btnStart_Water);
         btnStart.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
