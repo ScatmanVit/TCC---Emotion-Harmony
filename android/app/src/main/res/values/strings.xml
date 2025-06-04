@@ -76,4 +76,5 @@
     <string name="NameHabit">Nome do hábido</string>
     <string name="DateHabit">última vez que realizou esse hábito</string>
     <string name="Date">Data</string>
+    <string name="HabitBolean">Modo de registro diário</string>
 </resources>
