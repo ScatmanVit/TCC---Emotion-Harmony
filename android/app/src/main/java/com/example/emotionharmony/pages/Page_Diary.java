@@ -23,25 +23,7 @@ public class Page_Diary extends AppCompatActivity {
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.activity_page_diary);
-        // Vincula a barra de progresso
-        progressBar = findViewById(R.id.progressBar);
 
-        // Exibe a barra por 3 segundos
-        progressBar.setVisibility(View.VISIBLE);
-
-        handler.postDelayed(new Runnable() {
-            @Override
-            public void run() {
-                // Esconde a barra após 3 segundos
-                progressBar.setVisibility(View.GONE);
-            }
-        }, 3000); // 3000 milissegundos = 3 segundos
-        // Ajusta os paddings com base nas barras do sistema (topo, lateral, inferior)
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
-            Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
-            return insets;
-        });
 
         // Configura o menu inferior para esta tela, ativando a navegação entre seções
         BottomMenuView bottomMenu = findViewById(R.id.bottomMenu);
