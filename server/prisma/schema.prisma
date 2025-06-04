@@ -12,6 +12,9 @@ model tb_users {
   name_user               String    @db.VarChar(100)
   email_user              String    @unique @db.VarChar(50)
   cpf_user                String    @unique @db.VarChar(11)
+  sleep_time_start    DateTime?
+  sleep_time_end      DateTime?
+  sleep_time_duration Int?
   password_user           String    @db.VarChar(255)
   password_changed        Boolean   @default(false)
   lost_pasword_token_user String?   @db.VarChar(255)
@@ -20,16 +23,12 @@ model tb_users {
   last_login_date_user    DateTime?
   created_at              DateTime  @default(now())
   updated_at              DateTime  @updatedAt
-  exercise_habit_user     Boolean   @default(false)
-  hydration_habit_user    Boolean   @default(false)
-  sleep_habit_user        Boolean   @default(false)
-  smoke_habit_user        Boolean   @default(false)
+  weight_user             Float?
   phone_user            tb_phone[]
   today_user            tb_today[]
   meditation_user       tb_meditation[]
-  breath_user          tb_breath[]
+  breath_user           tb_breath[]
   habits_user           tb_habits[]
-  weight_user             Float?
 }
 
 model tb_phone {
@@ -89,12 +88,8 @@ model tb_breath {
 
 model tb_habits {
   id_habit            Int                  @id @default(autoincrement())
-  name_habit          tb_habits_name_habit
-  value_habit         Int?
-  sleep_time_start    DateTime?
-  sleep_time_end      DateTime?
-  sleep_time_duration Int?
-  sleep_feeling       String?
+  name_habit          String              @db.VarChar(50)
+  last_time_habit    DateTime?
   users_id            Int
   users_habits       tb_users?           @relation(fields: [users_id], references: [id_user])
   created_at          DateTime             @default(now())
@@ -102,7 +97,6 @@ model tb_habits {
 
   @@index([users_id], map: "tb_habits_users_id_fkey")
 }
-
 enum Type_user {
   user
   admin
@@ -126,13 +120,6 @@ enum Type_emotion {
 enum type_situation {
   boa
   ruim
-}
-
-enum tb_habits_name_habit {
-  hidratacao
-  fumo
-  exercicio
-  sono
 }
 
 enum tb_today_morning_afternoon_evening {
