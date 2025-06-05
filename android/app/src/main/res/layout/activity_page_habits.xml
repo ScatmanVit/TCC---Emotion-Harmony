@@ -13,7 +13,7 @@
         android:layout_height="match_parent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0">
@@ -31,8 +31,8 @@
             android:id="@+id/txtPeso"
             android:layout_width="360dp"
             android:layout_height="60dp"
-            android:layout_marginStart="24dp"
-            android:layout_marginTop="200dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="244dp"
             android:autofillHints=""
             android:background="@drawable/rounded_edittext"
             android:ems="10"
@@ -44,47 +44,18 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <EditText
-            android:id="@+id/txtHoraInicio"
-            android:layout_width="170dp"
-            android:layout_height="58dp"
-            android:layout_marginStart="120dp"
-            android:layout_marginTop="304dp"
-            android:background="@drawable/rounded_edittext"
-            android:ems="10"
-            android:fontFamily="@font/montserrat_semibold"
-            android:gravity="center"
-            android:hint="@string/Date"
-            android:inputType="time"
-            android:textColor="#000000"
-            android:textColorHint="#000000"
-            android:textSize="24sp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
         <androidx.cardview.widget.CardView
             android:layout_width="409dp"
             android:layout_height="wrap_content"
             tools:layout_editor_absoluteX="16dp"
             tools:layout_editor_absoluteY="327dp" />
 
-        <TextView
-            android:id="@+id/textView19"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="18dp"
-            android:layout_marginTop="268dp"
-            android:text="@string/DateHabit"
-            android:textSize="24sp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
         <Button
             android:id="@+id/btnPronto"
             android:layout_width="222dp"
             android:layout_height="63dp"
             android:layout_marginStart="92dp"
-            android:layout_marginTop="380dp"
+            android:layout_marginTop="352dp"
             android:fontFamily="@font/montserrat_bold"
             android:text="@string/botao_pronto"
             android:textAllCaps="true"
@@ -97,7 +68,7 @@
             android:layout_width="317dp"
             android:layout_height="68dp"
             android:layout_marginStart="56dp"
-            android:layout_marginTop="108dp"
+            android:layout_marginTop="160dp"
             android:gravity="center"
             android:text="@string/TxtAdd_Habit"
             android:textSize="20sp"
