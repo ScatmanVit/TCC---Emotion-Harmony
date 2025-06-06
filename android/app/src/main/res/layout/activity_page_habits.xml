@@ -19,13 +19,15 @@
         app:layout_constraintVertical_bias="0.0">
 
         <ImageView
-            android:id="@+id/btnBack"
+            android:id="@+id/btnBack12"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="17dp"
+            android:layout_marginTop="182dp"
             android:contentDescription="@string/back"
-            app:srcCompat="@drawable/back"
-            tools:layout_editor_absoluteX="17dp"
-            tools:layout_editor_absoluteY="597dp" />
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnPronto"
+            app:srcCompat="@drawable/back" />
 
         <EditText
             android:id="@+id/txtSenha"

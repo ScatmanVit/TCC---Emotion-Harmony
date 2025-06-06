@@ -23,6 +23,10 @@
         <activity
             android:name=".pages.Page_Diary"
             android:exported="false" />
+        <activity android:name=".pages.diary.PageWater"
+            android:exported="false" />
+        <activity android:name=".pages.diary.PageHabit"
+            android:exported="false" />
         <activity
             android:name=".pages.PageWaterActivity"
             android:exported="false" />
