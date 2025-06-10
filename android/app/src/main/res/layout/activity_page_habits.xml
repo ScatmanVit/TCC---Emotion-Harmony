@@ -19,18 +19,18 @@
         app:layout_constraintVertical_bias="0.0">
 
         <ImageView
-            android:id="@+id/btnBack12"
+            android:id="@+id/btnBack11"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="17dp"
-            android:layout_marginTop="182dp"
+            android:layout_marginBottom="109dp"
             android:contentDescription="@string/back"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/btnPronto"
             app:srcCompat="@drawable/back" />
 
         <EditText
-            android:id="@+id/txtSenha"
+            android:id="@+id/txtPeso"
             android:layout_width="360dp"
             android:layout_height="60dp"
             android:layout_marginStart="32dp"
@@ -40,7 +40,6 @@
             android:ems="10"
             android:fontFamily="@font/montserrat_semibold"
             android:hint="@string/NameHabit"
-            android:inputType="text|textPassword"
             android:textColor="#000000"
             android:textColorHint="#000000"
             app:layout_constraintStart_toStartOf="parent"
