@@ -18,7 +18,7 @@ public class PageHabit extends AppCompatActivity
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_page_habits);
-        ImageView btnBack12 = findViewById(R.id.btnBack12);
+        ImageView btnBack12 = findViewById(R.id.btnBack11);
         btnBack12.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
