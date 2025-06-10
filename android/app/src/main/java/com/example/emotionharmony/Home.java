@@ -67,7 +67,7 @@ public class Home extends AppCompatActivity {
         customToast = new CustomToast(this);
 
         txtEmail = findViewById(R.id.txtEmail);
-        txtSenha = findViewById(R.id.txtPeso);
+        txtSenha = findViewById(R.id.txtSenha);
         Button btnLogin = findViewById(R.id.btnLogin);
         TextView lblCadastro = findViewById(R.id.lblCadastro);
         CheckBox cbShowPass = findViewById(R.id.cbShowPassLogin);

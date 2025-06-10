@@ -14,10 +14,10 @@
         android:layout_height="match_parent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.5">
+        app:layout_constraintVertical_bias="0.0">
 
         <!-- Campo Peso -->
 
@@ -28,16 +28,18 @@
         <!-- Placeholder CardView -->
 
         <ImageView
-            android:id="@+id/btnBack"
+            android:id="@+id/btnBack12"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="17dp"
+            android:layout_marginTop="600dp"
             android:contentDescription="@string/back"
-            app:srcCompat="@drawable/back"
-            tools:layout_editor_absoluteX="17dp"
-            tools:layout_editor_absoluteY="597dp" />
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/back" />
 
         <EditText
-            android:id="@+id/txtPeso"
+            android:id="@+id/txtSenha"
             android:layout_width="360dp"
             android:layout_height="60dp"
             android:layout_marginStart="24dp"
@@ -59,6 +61,7 @@
             android:layout_height="58dp"
             android:layout_marginStart="24dp"
             android:layout_marginTop="300dp"
+            android:autofillHints=""
             android:background="@drawable/rounded_edittext"
             android:ems="10"
             android:fontFamily="@font/montserrat_semibold"
@@ -67,8 +70,7 @@
             android:textColor="#000000"
             android:textColorHint="#000000"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            android:autofillHints="" />
+            app:layout_constraintTop_toTopOf="parent" />
 
         <EditText
             android:id="@+id/txtHoraFim"
@@ -76,6 +78,7 @@
             android:layout_height="58dp"
             android:layout_marginStart="212dp"
             android:layout_marginTop="300dp"
+            android:autofillHints=""
             android:background="@drawable/rounded_edittext"
             android:ems="10"
             android:fontFamily="@font/montserrat_semibold"
@@ -84,8 +87,7 @@
             android:textColor="#000000"
             android:textColorHint="#000000"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            android:autofillHints="" />
+            app:layout_constraintTop_toTopOf="parent" />
 
         <androidx.cardview.widget.CardView
             android:layout_width="409dp"
