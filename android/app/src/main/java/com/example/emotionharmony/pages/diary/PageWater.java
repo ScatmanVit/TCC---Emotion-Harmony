@@ -19,6 +19,7 @@ import java.util.Locale;
 
 
 import com.example.emotionharmony.R;
+import com.example.emotionharmony.classes.UserData;
 import com.example.emotionharmony.components.BottomMenuView;
 import com.example.emotionharmony.databinding.ActivityPageDiaryBinding;
 import com.example.emotionharmony.databinding.ActivityPageExerciciesBinding;
@@ -89,12 +90,16 @@ public class PageWater extends AppCompatActivity {
                 return;
             }
             else {
+                // Salva os dados no singleton temporário
+                UserData.setPeso(peso);
+                UserData.setHoraInicio(horaInicio);
+                UserData.setHoraFim(horaFim);
+
                 Intent intent = new Intent(PageWater.this, Page_Diary.class);
                 startActivity(intent);
             }
-
-            // Aqui você pode prosseguir com o envio ou próxima tela
         });
+
 
         // Voltar
         btnBack11.setOnClickListener(v -> {
