@@ -4,10 +4,7 @@ const CustomError = require("../../../core/errors/CustomError");
 const bcrypt = require("bcrypt");
 
 module.exports.updateUserService = async (id_user, body) => {
-  console.log({ body });
-
   const { nome, email, cpf, senha, telefones } = body;
-  console.log({ id_user, nome, email, cpf, senha, telefones });
 
   const user = await prisma.tb_users.findUnique({ where: { id_user } });
   if (!user) throw new CustomError("Usuário não encontrado", 404);
