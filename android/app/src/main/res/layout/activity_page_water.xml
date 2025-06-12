@@ -8,6 +8,108 @@
     android:background="@drawable/gradient_background"
     tools:context=".pages.Page_Diary">
 
+    <ImageView
+        android:id="@+id/btnBack11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="150dp"
+        android:contentDescription="@string/back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/back" />
+
+    <EditText
+        android:id="@+id/txtPeso"
+        android:layout_width="360dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/rounded_edittext"
+        android:ems="10"
+        android:fontFamily="@font/montserrat_semibold"
+        android:hint="@string/hint_peso"
+        android:inputType="numberDecimal"
+        android:textColor="#000000"
+        android:textColorHint="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblTxtPeso" />
+
+    <EditText
+        android:id="@+id/txtHoraInicio"
+        android:layout_width="170dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/rounded_edittext"
+        android:clickable="true"
+        android:focusable="false"
+        android:fontFamily="@font/montserrat_semibold"
+        android:hint="@string/inicio"
+        android:textColor="#000000"
+        android:textColorHint="#000000"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblHorarioAcorda" />
+
+    <EditText
+        android:id="@+id/txtHoraFim"
+        android:layout_width="170dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/rounded_edittext"
+        android:clickable="true"
+        android:focusable="false"
+        android:fontFamily="@font/montserrat_semibold"
+        android:hint="@string/fim"
+        android:textColor="#000000"
+        android:textColorHint="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblHorarioAcorda" />
+
+    <TextView
+        android:id="@+id/lblHorarioAcorda"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="34dp"
+        android:text="@string/texto_acordado"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtPeso" />
+
+    <Button
+        android:id="@+id/btnPronto"
+        android:layout_width="222dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="@string/botao_pronto"
+        android:textAllCaps="true"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtHoraInicio" />
+
+    <TextView
+        android:id="@+id/lblTxtPeso"
+        android:layout_width="317dp"
+        android:layout_height="68dp"
+        android:layout_marginTop="100dp"
+        android:text="@string/ingestao_titulo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView28"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/icone_principal" />
+
     <com.example.emotionharmony.components.BottomMenuView
         android:id="@+id/bottomMenu"
         android:layout_width="match_parent"
@@ -27,112 +129,6 @@
 
         <!-- Placeholder CardView -->
 
-        <ImageView
-            android:id="@+id/btnBack11"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="17dp"
-            android:layout_marginBottom="106dp"
-            android:contentDescription="@string/back"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:srcCompat="@drawable/back" />
 
-        <EditText
-            android:id="@+id/txtPeso"
-            android:layout_width="360dp"
-            android:layout_height="60dp"
-            android:layout_marginStart="26dp"
-            android:layout_marginTop="190dp"
-            android:background="@drawable/rounded_edittext"
-            android:ems="10"
-            android:fontFamily="@font/montserrat_semibold"
-            android:hint="@string/hint_peso"
-            android:inputType="numberDecimal"
-            android:textColor="#000000"
-            android:textColorHint="#000000"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-
-        <EditText
-            android:id="@+id/txtHoraInicio"
-            android:layout_width="170dp"
-            android:layout_height="60dp"
-            android:layout_marginStart="26dp"
-            android:layout_marginTop="300dp"
-            android:background="@drawable/rounded_edittext"
-            android:clickable="true"
-            android:focusable="false"
-            android:fontFamily="@font/montserrat_semibold"
-            android:hint="@string/inicio"
-            android:textColor="#000000"
-            android:textColorHint="#000000"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <EditText
-            android:id="@+id/txtHoraFim"
-            android:layout_width="170dp"
-            android:layout_height="60dp"
-            android:layout_marginTop="300dp"
-            android:layout_marginEnd="26dp"
-            android:background="@drawable/rounded_edittext"
-            android:clickable="true"
-            android:focusable="false"
-            android:fontFamily="@font/montserrat_semibold"
-            android:hint="@string/fim"
-            android:textColor="#000000"
-            android:textColorHint="#000000"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <androidx.cardview.widget.CardView
-            android:layout_width="409dp"
-            android:layout_height="wrap_content"
-            tools:layout_editor_absoluteX="1dp"
-            tools:layout_editor_absoluteY="327dp" />
-
-        <TextView
-            android:id="@+id/textView19"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="116dp"
-            android:layout_marginTop="270dp"
-            android:text="@string/texto_acordado"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <Button
-            android:id="@+id/btnPronto"
-            android:layout_width="222dp"
-            android:layout_height="63dp"
-            android:layout_marginStart="92dp"
-            android:layout_marginTop="400dp"
-            android:fontFamily="@font/montserrat_bold"
-            android:text="@string/botao_pronto"
-            android:textAllCaps="true"
-            android:textSize="34sp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <TextView
-            android:id="@+id/textView20"
-            android:layout_width="317dp"
-            android:layout_height="68dp"
-            android:layout_marginStart="44dp"
-            android:layout_marginTop="116dp"
-            android:text="@string/ingestao_titulo"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <ImageView
-            android:id="@+id/imageView28"
-            android:layout_width="60dp"
-            android:layout_height="60dp"
-            android:layout_marginStart="8dp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/icone_principal" />
     </com.example.emotionharmony.components.BottomMenuView>
 </androidx.constraintlayout.widget.ConstraintLayout>
