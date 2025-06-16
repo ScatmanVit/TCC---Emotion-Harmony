@@ -2,10 +2,10 @@ import { formatPhone } from "./../../../../functions/format";
 
 //função para criação do componente de detalhes do usuario
 export default function UserDetails({ user }) {
-  const personalPhone = user?.phones_user?.find(
+  const personalPhone = user?.phone_user?.find(
     (p) => p.type_phone === "celular"
   );
-  const emergencyPhone = user?.phones_user?.find(
+  const emergencyPhone = user?.phone_user?.find(
     (p) => p.type_phone === "emergencia"
   );
   return (

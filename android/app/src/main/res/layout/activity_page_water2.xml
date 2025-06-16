@@ -121,14 +121,6 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0">
 
-        <!-- Campo Peso -->
-
-        <!-- Campo Horário Início -->
-
-        <!-- Campo Horário Fim -->
-
-        <!-- Placeholder CardView -->
-
 
     </com.example.emotionharmony.components.BottomMenuView>
 </androidx.constraintlayout.widget.ConstraintLayout>

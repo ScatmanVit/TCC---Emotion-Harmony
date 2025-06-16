@@ -60,7 +60,7 @@ public class Meditation_Page7 extends AppCompatActivity {
 
         // Define o texto final da meditação conforme tipo de situação (boa ou ruim)
         String typeOf = questionsMeditation.getTypeSituation();
-        txtSpeech.setText(typeOf.equals("Ruim") ? getString(R.string.exercicioBad) : getString(R.string.exercicioGood));
+        txtSpeech.setText(typeOf.equals("ruim") ? getString(R.string.exercicioBad) : getString(R.string.exercicioGood));
 
         // Fala o texto final após 1,5s
         new Handler().postDelayed(() ->

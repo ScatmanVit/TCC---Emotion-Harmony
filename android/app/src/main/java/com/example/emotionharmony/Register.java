@@ -156,7 +156,7 @@ public class Register extends AppCompatActivity {
      * Envia os dados para o backend e trata a resposta
      */
     private void sendRegisterRequest(JSONObject userData) {
-        ServerConnection.postRequest("/register", userData, new ServerConnection.ServerCallback() {
+        ServerConnection.postRequest("/auth/register", userData, new ServerConnection.ServerCallback() {
             @Override
             public void onSuccess(String response) {
                 runOnUiThread(() -> {
