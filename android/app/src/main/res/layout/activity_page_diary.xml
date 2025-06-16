@@ -28,7 +28,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <!-- Primeiro Card -->
+    <!-- Container de Cards -->
     <LinearLayout
         android:id="@+id/linearlayout"
         android:layout_width="match_parent"
@@ -40,8 +40,9 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
+        <!-- Card Inicial: Avaliação de água -->
         <androidx.cardview.widget.CardView
-            android:id="@+id/waterCard_Water"
+            android:id="@+id/waterCard_start"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="24dp"
@@ -59,12 +60,10 @@
                 android:padding="24dp">
 
                 <TextView
-                    android:id="@+id/textWater"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="16dp"
                     android:text="@string/avaliacao_agua"
-                    android:textColor="#000000"
+                    android:textColor="#000"
                     android:textSize="16sp"
                     android:textStyle="bold" />
 
@@ -72,15 +71,67 @@
                     android:id="@+id/btnStart_Water"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
                     android:backgroundTint="@android:color/white"
                     android:paddingLeft="24dp"
                     android:paddingRight="24dp"
                     android:text="@string/iniciar"
-                    android:textColor="#000000"
+                    android:textColor="#000"
                     android:textStyle="bold" />
+
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 
+        <!-- Card Progresso: Quantidade ingerida (início invisível) -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/waterCard_progress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="24dp"
+            android:visibility="gone"
+            app:cardBackgroundColor="#D8E5F8"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="24dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Quantidade de água ingerida"
+                    android:textColor="#000"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textWaterAmount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="0 ml"
+                    android:textSize="14sp" />
+
+                <ProgressBar
+                    android:id="@+id/progressWater"
+                    style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="8dp"
+                    android:layout_marginTop="8dp"
+                    android:indeterminate="false"
+                    android:max="2000"
+                    android:progress="0" />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Card de Hábito (inalterado) -->
         <androidx.cardview.widget.CardView
             android:id="@+id/waterCard_habit"
             android:layout_width="match_parent"
@@ -105,7 +156,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="16dp"
                     android:text="@string/Add_Habit"
-                    android:textColor="#000000"
+                    android:textColor="#000"
                     android:textSize="16sp"
                     android:textStyle="bold" />
 
@@ -117,14 +168,15 @@
                     android:paddingLeft="24dp"
                     android:paddingRight="24dp"
                     android:text="@string/iniciar"
-                    android:textColor="#000000"
+                    android:textColor="#000"
                     android:textStyle="bold" />
+
             </LinearLayout>
         </androidx.cardview.widget.CardView>
+
     </LinearLayout>
 
-    <!-- Segundo Card idêntico, com IDs diferentes -->
-
+    <!-- Bottom Menu -->
     <com.example.emotionharmony.components.BottomMenuView
         android:id="@+id/bottomMenu"
         android:layout_width="match_parent"
