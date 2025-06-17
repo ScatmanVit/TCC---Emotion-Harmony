@@ -37,8 +37,8 @@ export default function UserDetails({ user }) {
       </p>
       <p>
         <strong>Ultimo acesso:</strong>{" "}
-        {user.last_login
-          ? new Date(user.last_login).toLocaleString("pt-BR", {
+        {user.last_login_date_user
+          ? new Date(user.last_login_date_user).toLocaleString("pt-BR", {
               timeZone: "America/Sao_Paulo",
             })
           : "Nunca acessou"}
