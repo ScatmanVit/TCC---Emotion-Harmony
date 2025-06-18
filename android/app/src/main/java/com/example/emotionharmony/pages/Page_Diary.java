@@ -23,11 +23,10 @@ import com.example.emotionharmony.components.BottomMenuView;
 import com.example.emotionharmony.databinding.ActivityPageDiaryBinding;
 import com.example.emotionharmony.pages.diary.PageHabit;
 import com.example.emotionharmony.pages.diary.PageWater;
+import com.example.emotionharmony.pages.diary.PageWater2;
 import com.example.emotionharmony.utils.NavigationHelper;
 import com.example.emotionharmony.utils.ServerConnection;
-import com.google.type.DateTime;
 
-import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
@@ -86,10 +85,10 @@ public class Page_Diary extends AppCompatActivity {
         cardAddHabit = findViewById(R.id.waterCard_habit);
         containerLayout = findViewById(R.id.linearlayout);
 
+
         btnStartWater.setOnClickListener(v -> {
             Intent intent = new Intent(Page_Diary.this, PageWater.class);
             startActivity(intent);
-            showWaterProgress(0);
         });
 
         Button btnStartHabit = findViewById(R.id.btnStart_Habit);
@@ -110,17 +109,6 @@ public class Page_Diary extends AppCompatActivity {
     }
 
     private void fetchDataUser(){
-        ServerConnection.getRequestWithAuth("/user", token, new ServerConnection.ServerCallback() {
-            @Override
-            public void onSuccess(String response) {
-
-            }
-
-            @Override
-            public void onError(String error) {
-
-            }
-        });
         ServerConnection.getRequestWithAuth("/user", token, new ServerConnection.ServerCallback() {
             @Override
             public void onSuccess(String response) {
@@ -269,7 +257,12 @@ public class Page_Diary extends AppCompatActivity {
             } else {
                 cardStartWater.setVisibility(View.VISIBLE);
                 cardProgressWater.setVisibility(View.GONE);
+
             }
+
+            cardProgressWater.setOnClickListener(v->{
+                NavigationHelper.navigateTo(Page_Diary.this, PageWater2.class, true);
+            });
 
         } catch (Exception e) {
             Log.e("Page_Diary", "❌ Erro em loadAndDisplayWaterData: " + e.getMessage());
