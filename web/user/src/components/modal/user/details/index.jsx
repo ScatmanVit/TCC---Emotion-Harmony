@@ -21,10 +21,8 @@ export default function UserDetails({ user }) {
       </p>
       <p>
         <strong>CPF:</strong>{" "}
-        {user.cpf_user
-          .replace(/(\d{3})(\d)/, "$1.$2")
-          .replace(/(\d{3})(\d)/, "$1.$2")
-          .replace(/(\d{3})(\d{1,2})$/, "$1-$2")}
+        {user.cpf_user &&
+          `***.***.*${user.cpf_user.slice(-4, -2)}-${user.cpf_user.slice(-2)}`}
       </p>
       <p>
         <strong>Telefone Pessoal:</strong> {formatPhone(personalPhone)}
