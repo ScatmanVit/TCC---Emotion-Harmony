@@ -74,19 +74,19 @@ Recuperação de senha
 - Geração de relatórios e estatísticas
 
 
-👥 Autores
+## 👥 Autores
 
 Equipe Emotion Harmony
 
-Sergio Augusto Moreira Bastos - Desenvolvedor principal Back e Front do Site e App
-Victor Ribeiro Baradel - Desenvolvedor Front e Back do Site, e documentador.
-Yasmim Raynara da Silveira Silva - Modelagem de dados e criação do banco de dados
-Luiz Alberto de Carvalho Holanda Junior - Desenvolvedor Back e Front do App
-Gabriel de Oliveira Dozzi Tezza - Desenvolvedor Front e Back do Site, e documentador.
+- Sergio Augusto Moreira Bastos - Desenvolvedor principal Back e Front do Site e App
+- Victor Ribeiro Baradel - Desenvolvedor Front e Back do Site, e documentador.
+- Yasmim Raynara da Silveira Silva - Modelagem de dados e criação do banco de dados
+- Luiz Alberto de Carvalho Holanda Junior - Desenvolvedor Back e Front do App
+- Gabriel de Oliveira Dozzi Tezza - Desenvolvedor Front e Back do Site, e documentador.
 
 
 
-📄 Licença
+## 📄 Licença
 Este projeto está licenciado sob a Licença MIT - veja o arquivo LICENSE para detalhes.
 
 Desenvolvido como trabalho de conclusão de curso na Etec Lauro Gomes
