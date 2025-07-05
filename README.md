@@ -31,7 +31,7 @@ O Emotion Harmony oferece:
 ## 📊 Estrutura do Projeto
 
 ```plaintext
-emotion-harmonyvercci.app/
+emotion-harmony/
 ├── android/            # Código-fonte do aplicativo Android
 ├── server/             # Backend e lógica de servidor
 ├── telas/              # Design de interface e telas (.rar disponível)
