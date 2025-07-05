@@ -63,8 +63,8 @@ Frontend Mobile: Java (57.8%)
   
 ### Painel Web
 - Dashboard de acompanhamento
-- Gerenciamento de usuários (rota DELETE implementada)
-Recuperação de senha
+- Gerenciamento de usuários
+- Recuperação de senha
 - Análise de dados agregados
 
 ### Backend
