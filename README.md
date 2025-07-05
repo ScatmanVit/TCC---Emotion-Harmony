@@ -20,11 +20,11 @@ O Emotion Harmony oferece:
 
 ## 🧩 Componentes do Sistema
 
-| Componente         | Tecnologias Principais        | Status                             |
-|--------------------|------------------------------|----------------------------------|
-| Aplicativo Android | Java, Android SDK            | Versão APK disponível (emotion.apk) |
-| Interface Web      | JavaScript, HTML, CSS        | Pré-finalizada                   |
-| Backend Server     | JavaScript (Node.js)         | Backup disponível                |
+| Componente         | Tecnologias Principais        
+|--------------------|------------------------------|
+| Aplicativo Android | Java, Android SDK            |
+| Interface Web      | JavaScript, HTML, CSS        |
+| Backend Server     | JavaScript (Node.js)         |
 
 ---
 
